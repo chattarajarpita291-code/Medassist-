@@ -41,7 +41,7 @@ export default function App() {
                 {/* Top Section */}
                 <div className="top1">
                   <h2 className="official">
-                    WELCOME TO THE OFFICIAL PAGE OF MediAssist++
+                    WELCOME TO THE OFFICIAL PAGE OF MdiAssist++
                   </h2>
                   
                   
