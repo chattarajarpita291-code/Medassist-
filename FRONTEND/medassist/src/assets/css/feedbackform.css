@@ -1,0 +1,133 @@
+.Feedback {
+    height: auto;
+    width: 400px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+label {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #b2ebf2;
+    border-radius: 7px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border-color 0.2s;
+    margin-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+.feed-btn {
+    background: linear-gradient(90deg, #00bcd4 0%, #8ee3f7 100%);
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,188,212,0.08);
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.feed-btn:hover {
+    background: linear-gradient(90deg, #0097a7 0%, #00bcd4 100%);
+    transform: translateY(-2px) scale(1.02);
+}
+
+.email, .name, .phone, textarea {
+    position: static;
+    margin-bottom: 12px;
+}
+
+.mail, .nm, .ph {
+    position: static;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .Feedback {
+        width: 95%;
+        padding: 18px 8px;
+    }
+}
+
+.feedback-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ensures both boxes are aligned at the top and bottom */
+    gap: 48px;
+    margin-top: 40px;
+}
+
+.Feedback, .contact-info {
+    background: linear-gradient(135deg, #bfe8ed 0%, #b9bdd8 100%);
+    box-shadow: 0 8px 32px rgb(155, 162, 222);
+    border-radius: 18px;
+    padding: 32px 24px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.contact-info {
+    width: 340px;
+    text-align: center;
+    margin: 0; /* Remove any extra margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content if needed */
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #00796b;
+    letter-spacing: 1px;
+}
+
+.contact-info b {
+    font-size: 18px;
+    color: #0097a7;
+    font-weight: 600;
+    margin-top: 12px;
+    display: block;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #333;
+    margin: 6px 0 14px 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .feedback-contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .contact-info, .Feedback {
+        width: 95%;
+        max-width: 400px;
+    }
+}

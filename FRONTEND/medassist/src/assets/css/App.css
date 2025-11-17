@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #f9f9f9;
+}
+
+/* Top Banner */
+.top1 {
+  width: 100%;
+  padding: 8px 20px;
+  background-image: linear-gradient(to right, rgb(0, 0, 63), rgb(106, 209, 250));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.official {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.log {
+  color: white;
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.log:hover {
+  color: rgb(0, 0, 87);
+}
+
+/* Hero Section */
+.hero-sec {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: linear-gradient(45deg, rgb(2, 52, 71), rgb(124, 209, 243), white);
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.stext1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: rgb(1, 1, 53);
+  margin-bottom: 20px;
+}
+
+.stext1:hover {
+  color: rgb(0, 53, 53);
+  cursor: pointer;
+}
+
+.stext2 {
+  font-size: 18px;
+  color: black;
+  line-height: 1.4;
+}
+
+.hero-img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Cards Section */
+.card-cont {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex; /* Centered for horizontal layout */
+  justify-content: center; /* This line helps cards space evenly */
+  gap: 30px; /* Space between cards */
+  padding: 40px 20px;
+  background-color: rgb(233, 245, 248);
+  height: 400px;
+  
+}
+.card1, .card2, .card3 {
+  flex: 10; /* Allows the cards to grow and occupy space */
+  max-width: 350px; /* Optional */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #033649, #6db3f2);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  
+}
+
+.card1 { background: linear-gradient(to bottom, rgb(0, 62, 87), skyblue); }
+.card2 { background: linear-gradient(to bottom, rgb(1, 37, 51), skyblue); }
+.card3 { background: linear-gradient(to bottom, rgb(1, 37, 51), rgb(137, 220, 253)); }
+
+.card1:hover, .card2:hover, .card3:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Card Titles */
+.cardio1, .neuro1, .gyno1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cardio1:hover, .neuro1:hover, .gyno1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Card Descriptions */
+.cardio2, .neuro2, .gyno2 {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Circle Button */
+.cardio3, .neuro3, .gyno3 {
+  height: 40px;
+  width: 40px;
+  background-color: pink;
+  color: black;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.neuro3 { background-color: rgb(200, 250, 250); }
+.gyno3 { background-color: rgb(245, 189, 198); }
+
+.cardio3:hover, .neuro3:hover, .gyno3:hover {
+  cursor: pointer;
+  width: 100px;
+  border-radius: 25px;
+  background-color: aliceblue;
+}
+
+/* Contact Section */
+.box4 {
+  padding: 15px;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  background-color: rgb(233, 245, 248);
+  border-top: 1px solid darkblue;
+}
+
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgb(233, 245, 248);
+}
+
+.contact {
+  max-width: 250px;
+  font-size: 16px;
+}
+
+.box5 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.box6, .box7, .box8, .box9, .box10, .box11 {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.box8, .box10 {
+  font-weight: 800;
+}
+
+/* Responsive */
+#login-png {
+  width: 80px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .hero-sec {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+  }
+  .card-cont {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-cont {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    padding: 30px 5px;
+  }
+  .card1, .card2, .card3 {
+    max-width: 95vw;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .hero-text, .hero-img {
+    max-width: 95vw;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .top1 {
+    flex-direction: column;
+    padding: 10px 5px;
+    font-size: 16px;
+  }
+  .official {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .log {
+    position: static;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .hero-sec {
+    padding: 18px 2px;
+  }
+  .stext1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  .stext2 {
+    font-size: 15px;
+  }
+  .card-cont {
+    padding: 15px 2px;
+    gap: 12px;
+  }
+  .card1, .card2, .card3 {
+    padding: 12px;
+    font-size: 15px;
+  }
+  .cardio1, .neuro1, .gyno1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .box4 {
+    font-size: 18px;
+    padding: 8px;
+  }
+  .feed {
+    padding: 10px 2px;
+    gap: 12px;
+  }
+  .contact {
+    max-width: 95vw;
+    font-size: 14px;
+  }
+  .box5 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+}
